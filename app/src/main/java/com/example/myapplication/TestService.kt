@@ -52,7 +52,7 @@ class TestService : Service() {
         val notification = NotificationCompat.Builder(this, CHANNEL_ID )
             .setSmallIcon(androidx.customview.R.drawable.notification_bg)
             .setContentTitle("フォアグラウンドのテスト中")
-            .setContentText("終了する場合はこちらから行って下さい。")
+            .setContentText("起動する場合はこちらから行って下さい。")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(openIntent)
             .addAction(R.drawable.ic_launcher_foreground, "アプリを起動", notifyPendingIntent)
@@ -66,7 +66,7 @@ class TestService : Service() {
 
             Log.d("test", "set alarm")
             // 実行する時間（ミリ秒）
-            val alarmTime = System.currentTimeMillis() + 5000
+            val alarmTime = System.currentTimeMillis()
 
             // 実行したいクラスから Intent を作成
             val alarmIntent = Intent(this, AlarmReceiver::class.java)

@@ -36,14 +36,24 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/start_youtube"
+            android:id="@+id/start_youtube_from_package"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="start youtube"
+            android:text="start youtube from package"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/start_this_activity" />
+
+        <Button
+            android:id="@+id/start_youtube_from_deeplink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start youtube from deeplink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/start_youtube_from_package" />
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
